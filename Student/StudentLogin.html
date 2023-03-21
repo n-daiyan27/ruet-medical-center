@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUET Medical Center-Student's Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="StudentLogin.css">
+</head>
+<body>
+    <div class="container mt-3">
+        <a class="font-title fs-4 " href="../HomePage/index.html">RUET Medical Center</a>
+    </div>
+    <div class="container justify-content-center align-items-center mt-3">
+        <div class="row align-items-center">
+            <div class="col-md-5 col-sm-5 p-4">
+                <div>
+                    <h4>Welcome back!</h4>
+                    <p>Please fill up to enter your account</p> 
+                    
+                        <div class="form-group mt-3">
+                            <p class="mb-0">Email</p>
+                            <input type="email" class="form-control border-bottom" id="email" placeholder="Enter your email address">
+                            <p class="mt-2 mb-0">Password</p>
+                            <input type="password" class="form-control border-bottom" id="password"placeholder="Enter your password">
+                        </div>
+                        <button onclick="logincheck()" class="btn btn-primary btn-sm form-control my-3" type="submit">Login</button>
+                        <div id="loginerror">
+
+                        </div>
+                        
+                        <br>
+                        <a href="../ForgetStu/VerifyStu.html" class="text-center forget">Forgot Password?</a>
+                        <hr>
+                        <button  type="submit" onclick="location.href='../CreateNewStudent/CreateNewStudent.html'" class="my-2 btn btn-sm btn-primary form-control">Create New Account</button><br>
+                    
+                </div>
+                
+            </div>
+            <div class="col-md-7 col-sm-7">
+                <img class="img-fluid" src="../Assests/StudentLogin.jpg">                
+            </div>
+
+        </div>
+
+    </div> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="../Student/StudentLogin.js"></script>
+</body>
+</html>
